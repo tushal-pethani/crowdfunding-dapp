@@ -1,9 +1,26 @@
-node_modules
-.env
-coverage
-coverage.json
-typechain
+# Node modules
+node_modules/
 
-#Hardhat files
-cache
-artifacts
+# Hardhat cache
+cache/
+artifacts/
+typechain/
+
+# Dotenv files
+.env
+
+# OS files
+.DS_Store
+
+# Coverage reports
+coverage/
+
+# Logs
+*.log
+
+# IDEs
+.vscode/
+.idea/
+
+# Misc
+*.tsbuildinfo
