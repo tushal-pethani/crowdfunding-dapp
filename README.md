@@ -1,8 +1,7 @@
 🏗️ Crowdfunding DApp
-
 A decentralized crowdfunding platform built on Ethereum using Solidity, Hardhat, and a Next.js frontend. It allows users to create projects, contribute ETH, and handle fund withdrawals with contributor approval.
 
-⸻
+---
 
 🚀 Features
 • 🧑‍💼 Anyone can create a fundraising project
@@ -13,7 +12,7 @@ A decentralized crowdfunding platform built on Ethereum using Solidity, Hardhat,
 • 📤 Project owners can request withdrawals
 • ✅ Contributors vote on withdrawal requests (needs 50%+ votes)
 
-⸻
+---
 
 🛠️ Tech Stack
 • Solidity (Smart contracts)
@@ -21,7 +20,7 @@ A decentralized crowdfunding platform built on Ethereum using Solidity, Hardhat,
 • JavaScript / Next (Frontend)
 • Metamask (Wallet integration)
 
-⸻
+---
 
 📂 Project Structure
 
@@ -29,7 +28,7 @@ CrowdFundingDapp/
 ├── contracts/
 │ ├── Crowdfunding.sol
 │ └── Project.sol
-├──client/
+├── client/
 ├── components/
 ├── pages/
 ├── redux/
@@ -41,7 +40,7 @@ CrowdFundingDapp/
 ├── .gitignore
 └── README.md
 
-⸻
+---
 
 📜 Smart Contracts Overview
 
@@ -56,7 +55,7 @@ Project.sol
 • Marks project as Successful or Expired
 • Allows refunds or fund withdrawals with voting
 
-⸻
+---
 
 🥺 Understanding Key Files
 
@@ -77,38 +76,48 @@ Project.sol
 hardhat.config.js
 • Contains Hardhat configuration, including custom network settings (e.g., localhost)
 
-⸻
+---
 
-✨ How to Use 1. Clone repo: git clone https://github.com/tushal-pethani/crowdfunding-dapp.git 2. Install dependencies:
-├──client/ npm install
-├── npm install
+✨ How to Use
 
-    3.	Compile contracts:
-            ├── npx hardhat compile
+1. Clone repo:
+   git clone https://github.com/tushal-pethani/crowdfunding-dapp.git
 
-    4.	Start a local node:
-            ├── npx hardhat node
+2. Install dependencies:
+   cd client
+   npm install
+   cd ..
+   npm install
 
-    5.	Deploy contracts:
-            ├── npx hardhat run scripts/deploy.js --network localhost
-            Copy the deployed contract address
+3. Compile contracts:
+   npx hardhat compile
 
-    6. paste the deployed contract address in client/redux/interactions.js on line 13.
+4. Start a local node:
+   npx hardhat node
 
-    7. 🔗 Demo Videos
-    •	🎥 [How to connect with metamask?](https://drive.google.com/file/d/1j0m6nhn6WtNkClyJEw0fO05HdvDdQlJp/view?usp=sharing)
-    •	🎥 [Watch how to create your own test tokens](https://drive.google.com/file/d/1Fqv_H1mggGXF0XOQt5P7re_DcMSjnSSd/view?usp=sharing)
+5. Deploy contracts:
+   npx hardhat run scripts/deploy.js --network localhost
+   → Copy the deployed contract address
 
-    7.	Interact with deployed contracts (via frontend or Hardhat console)
+6. Paste the deployed contract address in:
+   client/redux/interactions.js (line 13)
 
-⸻
+7. 🔗 Demo Videos
+   🎥 How to connect with metamask:
+   https://drive.google.com/file/d/1j0m6nhn6WtNkClyJEw0fO05HdvDdQlJp/view?usp=sharing
+
+   🎥 Watch how to create your own test tokens:
+   https://drive.google.com/file/d/1Fqv_H1mggGXF0XOQt5P7re_DcMSjnSSd/view?usp=sharing
+
+8. Interact with deployed contracts (via frontend or Hardhat console)
+
+---
 
 🔐 Security Note
-
 Do NOT upload private keys or .env files.
 It is safe to upload the deployed contract address — it is needed by frontend apps and users to interact with your contract.
 
-⸻
+---
 
 👌 .gitignore
 
@@ -120,14 +129,13 @@ debug.log
 coverage/
 typechain/
 
-⸻
+---
 
 📄 License
-
 MIT License — feel free to fork and build your own version!
 
-⸻
+---
 
 🙌 Contributions
-
-Pull requests are welcome. For major changes, open an issue first to discuss what you’d like to change.
+Pull requests are welcome.
+For major changes, open an issue first to discuss what you’d like to change.
